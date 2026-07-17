@@ -48,7 +48,8 @@ Greenova is a single-page marketing site for a fictional renewable energy compan
 Greenova/
 ├── index.html            # All page markup - nav, hero, about, solutions, impact,
 │                         # projects, CTAs, why-choose, blog, footer
-├── style.css             # All styling - layout, responsive rules, CSS-only nav logic
+├── styles/
+|   └── style.css         # All styling - layout, responsive rules, CSS-only nav logic
 └── assets/
     ├── favicon.png       # Browser tab icon
     └── greenova.png      # Brand asset
