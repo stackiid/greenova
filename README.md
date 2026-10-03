@@ -11,10 +11,6 @@ A responsive, single-page marketing website for a renewable energy company, buil
 
 [https://stackiid.github.io/greenova/](https://stackiid.github.io/greenova/)
 
-## Preview
-
-![Greenova landing page, full-page screenshot](./assets/greenova.png)
-
 ## Table of Contents
 
 - [Features](#features)
@@ -50,34 +46,34 @@ A responsive, single-page marketing website for a renewable energy company, buil
 
 ## Page Sections
 
-| Order | Section | Anchor | Content |
-| --- | --- | --- | --- |
-| 1 | Navigation | - | Logo, five page links, a Search button, and a Contact Us button |
-| 2 | Hero | `#home` | Headline, supporting text, Explore Solutions button, floating card |
-| 3 | Features strip | - | Sustainable, Reliable, Responsible |
-| 4 | About | `#about` | Company summary, three highlights, three statistics |
-| 5 | Solutions | `#solutions` | Solar, Wind, Energy Storage, Consulting |
-| 6 | Impact | - | Three headline statistics and a wide image |
-| 7 | Projects | `#projects` | Three project cards with locations |
-| 8 | Call to action | - | "Ready to Switch to Clean Energy?" banner |
-| 9 | Why choose us | - | Four value points with icons |
-| 10 | Blog | `#blog` | Three article preview cards |
-| 11 | Final call to action | `#contact` | "Be Part of the Clean Energy Movement" |
-| 12 | Footer | - | Brand summary, links, contact details, legal links |
+| Order | Section              | Anchor       | Content                                                            |
+| ----- | -------------------- | ------------ | ------------------------------------------------------------------ |
+| 1     | Navigation           | -            | Logo, five page links, a Search button, and a Contact Us button    |
+| 2     | Hero                 | `#home`      | Headline, supporting text, Explore Solutions button, floating card |
+| 3     | Features strip       | -            | Sustainable, Reliable, Responsible                                 |
+| 4     | About                | `#about`     | Company summary, three highlights, three statistics                |
+| 5     | Solutions            | `#solutions` | Solar, Wind, Energy Storage, Consulting                            |
+| 6     | Impact               | -            | Three headline statistics and a wide image                         |
+| 7     | Projects             | `#projects`  | Three project cards with locations                                 |
+| 8     | Call to action       | -            | "Ready to Switch to Clean Energy?" banner                          |
+| 9     | Why choose us        | -            | Four value points with icons                                       |
+| 10    | Blog                 | `#blog`      | Three article preview cards                                        |
+| 11    | Final call to action | `#contact`   | "Be Part of the Clean Energy Movement"                             |
+| 12    | Footer               | -            | Brand summary, links, contact details, legal links                 |
 
 The text, statistics, project names, and contact details on the page are sample content written to demonstrate the layout.
 
 ## Tech Stack
 
-| Category | Technology |
-| --- | --- |
-| Markup | HTML5 (semantic elements: `header`, `nav`, `main`, `section`, `article`, `footer`) |
-| Styling | CSS3 with custom properties, Grid, Flexbox, `clamp()`, `:has()`, `position: sticky`, and `backdrop-filter` |
-| Fonts | Google Fonts: Plus Jakarta Sans (headings) and Inter (body) |
-| Icons | Font Awesome 6.5.1, loaded from cdnjs |
-| Images | Photographs loaded from Unsplash URLs, plus a local favicon |
-| JavaScript | None |
-| Build tooling | None |
+| Category      | Technology                                                                                                 |
+| ------------- | ---------------------------------------------------------------------------------------------------------- |
+| Markup        | HTML5 (semantic elements: `header`, `nav`, `main`, `section`, `article`, `footer`)                         |
+| Styling       | CSS3 with custom properties, Grid, Flexbox, `clamp()`, `:has()`, `position: sticky`, and `backdrop-filter` |
+| Fonts         | Google Fonts: Plus Jakarta Sans (headings) and Inter (body)                                                |
+| Icons         | Font Awesome 6.5.1, loaded from cdnjs                                                                      |
+| Images        | Photographs loaded from Unsplash URLs, plus a local favicon                                                |
+| JavaScript    | None                                                                                                       |
+| Build tooling | None                                                                                                       |
 
 ## Project Structure
 
@@ -122,13 +118,13 @@ There are no dependencies to install and no build step.
 
 The visual design is controlled by CSS custom properties declared on `:root` in `styles/style.css`.
 
-| Group | Examples |
-| --- | --- |
-| Colors | `--color-bg`, `--color-bg-alt`, `--color-dark`, `--color-primary`, `--color-accent`, `--color-accent-light`, `--color-text`, `--color-text-muted`, `--color-border` |
-| Typography | `--font-display`, `--font-body`, `--fs-body`, `--fs-lead`, `--fs-small`, `--fs-eyebrow` |
-| Spacing | `--space-xs` to `--space-xl`, `--section-padding`, `--section-padding-mobile`, `--container-width`, `--container-pad` |
-| Shape and depth | `--radius-sm` to `--radius-full`, `--shadow-sm`, `--shadow-md`, `--shadow-lg` |
-| Motion | `--transition-fast`, `--transition` |
+| Group           | Examples                                                                                                                                                            |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Colors          | `--color-bg`, `--color-bg-alt`, `--color-dark`, `--color-primary`, `--color-accent`, `--color-accent-light`, `--color-text`, `--color-text-muted`, `--color-border` |
+| Typography      | `--font-display`, `--font-body`, `--fs-body`, `--fs-lead`, `--fs-small`, `--fs-eyebrow`                                                                             |
+| Spacing         | `--space-xs` to `--space-xl`, `--section-padding`, `--section-padding-mobile`, `--container-width`, `--container-pad`                                               |
+| Shape and depth | `--radius-sm` to `--radius-full`, `--shadow-sm`, `--shadow-md`, `--shadow-lg`                                                                                       |
+| Motion          | `--transition-fast`, `--transition`                                                                                                                                 |
 
 Reusable classes such as `.container`, `.btn`, `.btn-primary`, `.eyebrow`, and `.section-heading` are shared across sections.
 
@@ -136,13 +132,13 @@ Reusable classes such as `.container`, `.btn`, `.btn-primary`, `.eyebrow`, and `
 
 The stylesheet uses fluid sizing for typography, spacing, and radii, and adjusts the layout at the following breakpoints:
 
-| Breakpoint | Behavior |
-| --- | --- |
-| 1800px and wider | Container maximum width increases to 1320px |
-| 1024px and narrower | Hero, About, Why Choose Us, Projects, and CTA banner switch to a single column, and their images move above the text where defined |
-| 860px and narrower | Desktop navigation links and the Search button are hidden, and the checkbox-driven mobile menu panel is used |
-| 480px and narrower | The About stats card and hero floating card return to normal flow instead of overlapping, and the featured impact stat is no longer offset |
-| 340px and narrower | Navigation actions and feature items use tighter gaps |
+| Breakpoint          | Behavior                                                                                                                                   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1800px and wider    | Container maximum width increases to 1320px                                                                                                |
+| 1024px and narrower | Hero, About, Why Choose Us, Projects, and CTA banner switch to a single column, and their images move above the text where defined         |
+| 860px and narrower  | Desktop navigation links and the Search button are hidden, and the checkbox-driven mobile menu panel is used                               |
+| 480px and narrower  | The About stats card and hero floating card return to normal flow instead of overlapping, and the featured impact stat is no longer offset |
+| 340px and narrower  | Navigation actions and feature items use tighter gaps                                                                                      |
 
 ### Mobile Menu
 
